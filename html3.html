@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Meilleures Marques</title>
+    <style>
+        /* Général */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fce4ec;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Barre de navigation */
+        nav {
+            background: #c6416d;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 30px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fce4ec;
+        }
+
+        /* Section des marques */
+        .marque-section {
+            margin: 80px 0;
+        }
+
+        .marque-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        /* Texte centré */
+        .marque-text {
+            width: 50%;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .marque img {
+            width: 250px;
+            height: auto;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .marque img:hover {
+            transform: scale(1.05);
+        }
+
+        .marque h2, .marque h3 {
+            color: #c6416d;
+            font-family: 'Sydney', sans-serif;
+        }
+
+        /* Descriptions */
+        .description {
+            background-color: rgba(255, 182, 193, 0.6);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            font-size: 18px;
+            margin-top: 20px;
+            color: #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Commentaires */
+        .comment-section {
+            margin-top: 100px;
+            background-color: #f1f1f1;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .comment-bubble {
+            background-color: #fce4ec;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 60%;
+            margin: 10px auto;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .comment-bubble:before {
+            content: '💬';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            border: none;
+            background: #e91e63;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .marque-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                font-size: 18px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="html4.html">Page de garde</a>
+        <a href="Html2.html">Parfum homme</a>
+        <a href="html.html">Parfum femme</a>
+        <a href="html3.html">Les Marques</a>
+        <a href="Home 12.html">Les Familles</a>
+    </nav>
+
+    <div class="marque-section">
+        <!-- Marque 1 -->
+        <div class="marque-container">
+            <div class="marque-text">
+                <h2><b>Chanel</b></h2>
+                <h3>Une légende de la haute couture</h3>
+                <p>Chanel, fondée par Coco Chanel en 1910, est l'une des maisons les plus emblématiques du monde de la mode et des parfums. Le parfum <i>Chanel No. 5</i>, lancé en 1921, reste l'un des plus célèbres et intemporels de l'industrie de la parfumerie.</p>
+                <div class="description">
+                    <b>Exemples de parfums :</b> Chanel No. 5, Chance, Coco Mademoiselle
+                </div>
+            </div>
+            <img src="https://i.pinimg.com/736x/ae/11/2e/ae112e07fac496abc2a6eb4b45e27be6.jpg" alt="Chanel" class="marque">
+        </div>
+
+        <!-- Marque 2 -->
+        <div class="marque-container">
+            <div class="marque-text">
+                <h2><b>Dior</b></h2>
+                <h3>Un symbole de luxe et d'élégance</h3>
+                <p>Fondée en 1946 par le designer Christian Dior, la marque est rapidement devenue synonyme de raffinement et de luxe. Son parfum iconique, <i>J'adore</i>, incarne l'esprit de la féminité moderne avec ses notes florales envoûtantes.</p>
+                <div class="description">
+                    <b>Exemples de parfums :</b> J'adore, Sauvage, Dior Homme
+                </div>            
+            </div>
+            <img src="https://i.pinimg.com/736x/7d/98/2e/7d982ebeb7cae3151d4b5c3f166ef057.jpg" alt="Dior" class="marque">
+        </div>
+
+        <!-- Marque 3 -->
+        <div class="marque-container">
+            <div class="marque-text">
+                <h2><b>Lancôme</b></h2>
+                <h3>Un symbole de beauté et d'élégance</h3>
+                <p>Lancôme, fondée en 1935 par Armand Petitjean, est une marque emblématique du monde de la beauté et des parfums. Le parfum <i>Trésor</i>, lancé en 1990, est un classique, symbolisant l'élégance et la féminité. Lancôme combine tradition et innovation, offrant des créations olfactives raffinées et intemporelles.</p>
+                <div class="description">
+                    <b>Exemples de parfums :</b> Trésor, La Vie Est Belle, Idôle
+                </div>
+            </div>
+            <img src="https://i.pinimg.com/736x/b0/a4/28/b0a428ee3f29ab3ea691339f935da3c4.jpg" alt="Lancôme" class="marque">
+        </div>
+    </div>
+
+    <!-- Section des commentaires -->
+    <div class="comment-section">
+        <h2>Vos commentaires</h2>
+        <div class="comment-bubble">J'adore ces marques ! Mes préférées sont Chanel et Dior.</div>
+        <div class="comment-bubble">Guerlain a une histoire fascinante, Shalimar est un parfum magnifique.</div>
+        <textarea placeholder="Laissez un commentaire..."></textarea>
+        <br>
+        <button>Envoyer</button>
+    </div>
+</body>
+</html>
