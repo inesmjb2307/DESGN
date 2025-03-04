@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Parfums de Luxe - Homme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sydney&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sydney', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #cce5ff; /* Bleu clair */
+            text-align: center;
+            transform: scale(0.67); /* Zoom à 67% */
+            transform-origin: top center; /* Ajuste l'origine du zoom */
+        }
+        nav {
+            background: #005f9e; /* Bleu */
+            padding: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .parfum-section {
+            margin: 80px 0;
+        }
+        .parfum-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            margin-top: 40px;
+        }
+        .parfum img {
+            width: 400px;
+            height: auto;
+            border-radius: 20px;
+        }
+        .ingredients {
+            text-align: left;
+            font-size: 24px;
+            background-color: rgba(0, 95, 158, 0.4); /* Bleu transparent */
+            padding: 20px;
+            border-radius: 12px;
+            color: #000; /* Texte en noir */
+        }
+        .comment-section {
+            margin-top: 100px;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 18px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            border: none;
+            background: #006bb3; /* Bleu foncé */
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .comment-bubble {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 60%;
+            margin: 10px auto;
+            font-size: 16px;
+            position: relative;
+        }
+        .comment-bubble:before {
+            content: '💬';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px;">Parfums de Luxe - Homme</h1>
+
+    <nav>
+        <a href="#parfum1">Dior Sauvage</a>
+        <a href="#parfum2">Bleu de Chanel</a>
+        <a href="#parfum3">Emporio Armani Stronger With You Intensely</a>
+        <a href="#parfum4">Givenchy Gentleman</a>
+    </nav>
+
+    <div id="parfum1" class="parfum-section">
+        <h2 style="font-size: 40px;">Versace Crystal Noir</h2>
+        <div class="parfum-container">
+            <img src="https://i.pinimg.com/736x/9e/4b/05/9e4b05b7f60c0d90880f2871e5432541.jpg" alt="Versace Crystal Noir" width="500" height="500">
+            <div class="ingredients">
+                <h1>Composants du parfum Versace Crystal Noir :</h1>
+                <p><strong>Note de tête :</strong> Poire, Poivre rose, Gingembre</p>
+                <p><strong>Note de cœur :</strong> Fleur d'orchidée, Fleur d'oranger, Gardenia</p>
+                <p><strong>Note de fond :</strong> Musc, Ambre, Bois de santal</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parfum2" class="parfum-section">
+        <h2 style="font-size: 40px;">Bleu de Chanel</h2>
+        <div class="parfum-container">
+            <img src="https://i.pinimg.com/736x/23/8f/82/238f827309a017746bb0400bfdc1e14d.jpg" alt="Bleu de Chanel" width="500" height="500">
+            <div class="ingredients">
+                <h1>Composants du parfum Bleu de Chanel :</h1>
+                <p><strong>Note de tête :</strong> Citron, Pamplemousse, Menthe</p>
+                <p><strong>Note de cœur :</strong> Gingembre, Jasmin, Nootka cypress</p>
+                <p><strong>Note de fond :</strong> Santal, Patchouli, Cèdre</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parfum3" class="parfum-section">
+        <div class="parfum-container">
+            <div id="parfum1" class="parfum-section">
+                <h2 style="font-size: 40px;">Dior Sauvage</h2>
+                <div class="parfum-container">
+                    <img src="https://i.pinimg.com/736x/3d/ca/46/3dca462ccc10139252780ae95bd3b2be.jpg" alt="Dior Sauvage" width="500" height="500">
+                    <div class="ingredients">
+                        <h1>Composants du parfum Dior Sauvage :</h1>
+                        <p><strong>Note de tête :</strong> Bergamote de Calabre</p>
+                        <p><strong>Note de cœur :</strong> Poivre, Lavande</p>
+                        <p><strong>Note de fond :</strong> Ambroxan, Cèdre, Vétiver</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="parfum4" class="parfum-section">
+        <h2 style="font-size: 40px;">Dylan Blue</h2>
+    <div class="parfum-container">
+        <img src="https://i.pinimg.com/736x/2e/0b/7e/2e0b7ece155c4f28c67d1dcb64959744.jpg" alt="Dylan Blue" width="500" height="500">
+        <div class="ingredients">
+            <h1>Composants du parfum Dylan Blue :</h1>
+            <p><strong>Note de tête :</strong> Pamplemousse, Bergamote, Feuilles de violette</p>
+            <p><strong>Note de cœur :</strong> Papyrus, Bois de cèdre, Ambroxan</p>
+            <p><strong>Note de fond :</strong> Musc, Safran, Tonka bean</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-section">
+        <h3 style="font-size: 40px;">Votre avis :</h3>
+        <textarea placeholder="Laissez votre commentaire..."></textarea>
+        <button onclick="submitComment()">Envoyer</button>
+        <div id="comments-list"></div>
+    </div>
+
+    <script>
+        function submitComment() {
+            var commentText = document.querySelector("textarea").value;
+            if (commentText.trim() !== "") {
+                var commentDiv = document.createElement("div");
+                commentDiv.classList.add("comment-bubble");
+                commentDiv.textContent = commentText;
+                document.getElementById("comments-list").appendChild(commentDiv);
+                document.querySelector("textarea").value = "";
+            } else {
+                alert("Veuillez entrer un commentaire.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Parfums de Luxe </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fce4ec;
+            text-align: center;
+            transform: scale(0.67); /* Zoom à 67% */
+            transform-origin: top center; /* Origine du zoom en haut */
+        }
+        nav {
+            background: #c6416d;
+            padding: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .parfum-section {
+            margin: 80px 0;
+        }
+        .parfum-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            margin-top: 40px;
+        }
+        .parfum img {
+            width: 400px;
+            height: auto;
+            border-radius: 20px;
+        }
+        .ingredients {
+            text-align: left;
+            font-size: 24px;
+        }
+        .comment-section {
+            margin-top: 100px;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 18px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            border: none;
+            background: #e91e63;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px;">Parfums de Luxe - Femme</h1>
+
+    <nav>
+        <a href="#parfum1">Dior j'adore</a>
+        <a href="#parfum2">Valentiono born in roma</a>
+        <a href="#parfum3">Carolina herrera blush</a>
+        <a href="#parfum4">Miss dior</a>
+    </nav>
+
+    <div id="parfum1" class="parfum-section">
+        <h2 style="font-size: 40px;">Dior j'adore</h2>
+        <div class="parfum-container">
+            <img src="https://www.olfastory.com/sites/www.olfastory.com/files/styles/500x500/public/j-adore-dior.jpg?itok=SzzNEV2F" alt="J'adore Dior" width="500" height="500">
+            <div class="ingredients">
+                <h1>Composants du parfum Dior j'adore :</h1>
+                <p><strong>Note de tête :</strong> Mandarine, Bergamote, Mélisse</p>
+                <p><strong>Note de cœur :</strong> Jasmin, Rose, Orchidée, Ylang-ylang</p>
+                <p><strong>Note de fond :</strong> Musc, Bois de rose, Vétiver</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <div id="parfum2" class="parfum-section">
+        <h2 style="font-size: 40px;">Valentiono born in roma</h2>
+        <div class="parfum-container">
+            <img src="https://i.pinimg.com/736x/87/bd/ac/87bdacf70200acb33702e6044e8048ee.jpg" alt="Image Pinterest" width="500" height="500">
+            <div class="ingredients">
+                <h1>Composants du parfum Valentiono born in roma :</h1>
+                <p><strong>Note de tête :</strong> Mandarine, Poire, Noix de coco</p>
+                <p><strong>Note de cœur :</strong> Jasmin, Rose de Damas, Fleur d'oranger</p>
+                <p><strong>Note de fond :</strong> Vanille, Bois de cachemire, Patchouli</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parfum3" class="parfum-section">
+        <h2 style="font-size: 40px;">Carolina herrera blush</h2>
+        <div class="parfum-container">
+            <img src="https://i.pinimg.com/736x/c8/47/50/c84750f5d293108f94b3405209f7c577.jpg" alt="Image Pinterest" width="500" height="500">
+            <div class="ingredients">
+                <h1>Composants du parfum Carolina herrera blush :</h1>
+    <p><strong>Note de tête :</strong> Pêche, Mandarine, Bergamote</p>
+    <p><strong>Note de cœur :</strong> Rose, Fleur d'oranger, Jasmin</p>
+    <p><strong>Note de fond :</strong> Musc, Bois de cèdre, Vanille</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parfum4" class="parfum-section">
+        <h2 style="font-size: 40px;">Miss dior</h2>
+        <div class="parfum-container">
+            <img src="https://i.pinimg.com/736x/16/a0/29/16a0295cb6794fe0f437a254242c0d99.jpg" alt="Image Pinterest" width="500" height="500">
+            <div class="ingredients">
+                <h1>Composants du parfum Miss Dior :</h1>
+                <p><strong>Note de tête :</strong> Orange sanguine, Mandarine</p>
+                <p><strong>Note de cœur :</strong> Rose de Grasse, Rose Damascena, Gardénia, Jasmin</p>
+                <p><strong>Note de fond :</strong> Patchouli, Bois de rose, Musc blanc, Vanille</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-section">
+        <h3 style="font-size: 40px;">Votre avis :</h3>
+        <textarea placeholder="Laissez votre commentaire..."></textarea>
+        <button onclick="submitComment()">Envoyer</button>
+    </div>
+
+    <script>
+        function submitComment() {
+            alert("Votre commentaire a été soumis ! Merci pour votre avis.");
+        }
+    </script>
+</body>
+</html>
